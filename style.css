@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+#container{
+ background:linear-gradient(185deg,rgb(248, 165, 179),rgb(194, 189, 189));
+ min-height: 100vh;
+  display:flex;
+ justify-content: center;
+ align-items: flex-start;
+ flex-wrap: wrap;
+ padding-top: 80px;
+}
+.box{
+background-color: rgb(69, 65, 65);
+width:330px;
+margin: 15px;
+height: 300px;
+overflow: hidden;
+border-radius: 20px;;
+box-shadow: 0px 2px 3px black;
+position: relative;
+transition:box-shadow 0.3s ease ;
+}
+.box:hover{
+   box-shadow: 0px 4px 8px black; 
+}
+.menu{
+    width:100%;
+    background-color: #222831;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu i{
+    margin:5px;
+    transition:color 0.3 ease ;
+}
+.menu i:hover{
+color: rgb(99, 95, 95);
+cursor: pointer;
+}
+.box textarea {
+    width: 100%;
+    border: none;
+  min-height: 240px;
+    resize: none;
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    background: transparent;
+}
+
+.box textarea:focus {
+    outline: none;
+}
+#add{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: azure;
+    background-color: #179712;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+     z-index: 1000;
+}
+
+.add:hover{
+    background-color: #06a086;
+}
